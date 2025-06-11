@@ -3,6 +3,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #F0F8FF;
   cursor: none; /* hide OS cursor */
+  padding: 0 50px;
 }
 
 /* Typography overrides */
@@ -485,3 +486,25 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+
+/* === mobile (< 768px) project layout tweaks === */
+@media (max-width: 767px) {
+  /* force each project-media + project-text to span the full width */
+  body {
+padding: 0px 0px;  }
+
+  /* turn the description from an absolute overlay into a normal block */
+  .project .description {
+    position: static !important;    /* drop out of absolute context */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;     /* cancel the translate centering */
+    opacity: 1 !important;          /* make sure it’s visible */
+    margin-top: 1rem;               /* some breathing room below the image */
+    max-width: 100%;                /* fill the container */
+    background-color: rgba(255,255,255,0.9);
+    backdrop-filter: none;          /* remove blur under mobile */
+  }
+}
+
