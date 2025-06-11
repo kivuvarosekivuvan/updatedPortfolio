@@ -26,7 +26,7 @@
     <main class="container mx-auto p-4 md:p-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-            <div class="lg:col-span-3 about-me-section">
+            <div class="lg:col-span-3 about-me-section mb-16">
                 <div class="about-me-image-container">
                     <img src="images/IMG_8923.jpg" alt="Rose Kivuva Profile" class="about-me-image">
                 </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="card lg:col-span-2">
+            <div class="card lg:col-span-2 mb-24">
                 <h2 class="text-3xl font-bold text-center text-primary-dark mb-4 section-heading">My Core Technical
                     Strengths</h2>
                 <p class="text-center text-gray-700 mb-6">A holistic technical toolkit for impactful problem-solving
@@ -59,7 +59,7 @@
                     across key programming languages, frameworks, and methodologies.</p>
             </div>
 
-            <div class="card flex flex-col items-center justify-center">
+            <div class="card flex flex-col items-center justify-center mb-16">
                 <h2 class="text-3xl font-bold text-center text-primary-dark mb-4 section-heading">Impact By Numbers</h2>
                 <div class="flex flex-wrap justify-center mt-4">
                     <div class="stat-circle">
@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="card lg:col-span-3">
+            <div class="card lg:col-span-3 mb-16">
                 <h2 class="text-3xl font-bold text-center text-primary-dark mb-4 section-heading">Professional Journey:
                     A Path of Growth</h2>
                 <p class="text-center text-gray-700 max-w-4xl mx-auto mb-6">A chronological overview highlighting my key
@@ -123,42 +123,85 @@
                 </div>
             </div>
 
-            <div class="card lg:col-span-3">
-                <h2 class="text-3xl font-bold text-center text-primary-dark mb-4 section-heading">Featured Projects:
-                    Where Ideas Take Form</h2>
-                <p class="text-center text-gray-700 max-w-4xl mx-auto mb-6">A glimpse into my impactful projects,
-                    showcasing my technical capabilities and problem-solving approach.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="project-card">
-                        <div class="text-5xl text-primary-dark mb-3 text-center">👩‍👩‍👧‍👦 🌍</div>
-                        <h3 class="text-2xl font-bold text-primary-dark mb-2 text-center">Community Accessibility Tool
-                        </h3>
-                        <p class="text-gray-800 mb-3 text-center">Community Accessibility Toolkit—your one-stop solution for building a more inclusive web. Whether you’re a developer, designer, or simply passionate about accessibility, this toolkit is crafted with you in mind.</p>
-                        <p class="text-sm font-semibold text-primary-medium text-center">Skills: JavaScript, HTML, React.js,
-                            Python, CSS and Research</p>
-                    </div>
-                    <div class="project-card">
-                        <div class="text-5xl text-primary-dark mb-3 text-center">🌿</div>
-                        <h3 class="text-2xl font-bold text-primary-dark mb-2 text-center">UrbanVerde</h3>
-                        <p class="text-gray-800 mb-3 text-center">An innovative IoT system addressing food insecurity by
-                            fostering sustainability among plants, chickens, and fish in informal settlements, complete
-                            with a comprehensive monitoring dashboard.</p>
-                        <p class="text-sm font-semibold text-primary-medium text-center">Skills: C++, Next.js, React.js,
-                            Figma, Django REST Framework, Python, JavaScript, Jira, Research</p>
-                    </div>
-                    <div class="project-card">
-                        <div class="text-5xl text-primary-dark mb-3 text-center">🎨</div>
-                        <h3 class="text-2xl font-bold text-primary-dark mb-2 text-center">Chix Brand Designs</h3>
-                        <p class="text-gray-800 mb-3 text-center">Created a consistent and appealing brand identity for
-                            'Chix' across various mock products, applying core design principles for visual appeal and
-                            coordination.</p>
-                        <p class="text-sm font-semibold text-primary-medium text-center">Skills: Adobe Illustrator,
-                            Figma, Adobe Photoshop</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card lg:col-span-3">
+
+
+  <!-- PROJECTS -->
+     <div class="lg:col-span-3 text-center">
+    <h2 class="text-3xl font-bold text-primary-dark mb-2 section-heading">
+      Projects: Selected Works
+    </h2>
+    <p class="text-gray-700 max-w-4xl mx-auto">
+      A showcase of my featured projects demonstrating technical expertise and impact.
+    </p>
+  </div>
+  <section class="project relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Project 1 -->
+    <div class="relative project-media">
+      <img src="images/toolkit.png" alt="Community Accessibility Tool screenshot"
+           class="rounded-lg shadow-lg w-full object-cover" />
+      <div class="description absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                        bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-xl max-w-xs">
+        <p>
+          Community Accessibility Toolkit—your one-stop solution for building a more inclusive web...
+        </p>
+      </div>
+    </div>
+    <div class="project-text space-y-4 text-center md:text-left">
+      <p class="text-sm uppercase text-gray-500">Featured Project</p>
+      <h3 class="text-2xl font-bold text-blue-900">Community Accessibility Tool</h3>
+      <ul class="flex flex-wrap justify-center md:justify-start gap-2 text-sm font-medium text-blue-700">
+        <li>JavaScript</li><li>HTML</li><li>React.js</li><li>Python</li><li>CSS</li><li>Research</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
+    <!-- Project 2 -->
+    <div class="relative project-media">
+      <img src="images/atembo.jpeg" alt="UrbanVerde dashboard"
+           class="rounded-lg shadow-lg w-full object-cover" />
+      <div class="description absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                        bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-xl max-w-xs">
+        <p>
+          An innovative IoT system addressing food insecurity by fostering sustainability among plants...
+        </p>
+      </div>
+    </div>
+    <div class="project-text space-y-4 text-center md:text-right">
+      <p class="text-sm uppercase text-gray-500">Featured Project</p>
+      <h3 class="text-2xl font-bold text-blue-900">UrbanVerde</h3>
+      <ul class="flex flex-wrap justify-center md:justify-end gap-2 text-sm font-medium text-blue-700">
+        <li>C++</li><li>Next.js</li><li>React.js</li><li>Figma</li><li>Django REST</li><li>Python</li><li>Jira</li><li>Research</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Project 3 -->
+    <div class="relative project-media">
+      <img src="images/chix.png" alt="Chix Brand Designs mockup"
+           class="rounded-lg shadow-lg w-full object-cover" />
+      <div class="description absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                        bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-xl max-w-xs">
+        <p>
+          Created a consistent and appealing brand identity for “Chix” across various mock products...
+        </p>
+      </div>
+    </div>
+    <div class="project-text space-y-4 text-center md:text-left">
+      <p class="text-sm uppercase text-gray-500">Featured Project</p>
+      <h3 class="text-2xl font-bold text-blue-900">Chix Brand Designs</h3>
+      <ul class="flex flex-wrap justify-center md:justify-start gap-2 text-sm font-medium text-blue-700">
+        <li>Illustrator</li><li>Figma</li><li>Photoshop</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+            <div class="card lg:col-span-3 mt-48">
                 <h2 class="text-3xl font-bold text-center text-primary-dark mb-4 section-heading">Community & Impact:
                     Beyond the Code</h2>
                 <p class="text-center text-gray-700 max-w-4xl mx-auto mb-6">My commitment extends to nurturing talent
@@ -206,12 +249,13 @@
 
             </div>
 
-            <div class="card lg:col-span-3 text-center bg-gradient-to-br from-primary-lighter to-white p-8">
+            <div class="card lg:col-span-3 text-center bg-gradient-to-br from-primary-lighter to-white p-8 mt-16">
                 <h2 class="text-3xl font-bold text-primary-dark mb-4 section-heading">Looking Ahead: Crafting the Future
                     of Tech</h2>
-                <p class="max-w-4xl mx-auto text-lg text-gray-700">I am excited by the boundless potential of technology
-                    and eagerly look forward to collaborating on impactful projects that continue to better lives and
-                    shape the future. Let's create amazing things together!</p>
+    <p class="max-w-4xl mx-auto text-lg text-gray-700">
+  I love how technology can make life easier, and I’m excited to team up with others to build things that really help people. If you’re ready to work together on something awesome, feel free to reach out!
+</p>
+
                 <div class="text-5xl mt-6 text-primary-medium">🚀✨🌍</div>
             </div>
 

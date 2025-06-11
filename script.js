@@ -273,3 +273,18 @@ new Chart(skillsCtx, {
         }
     }
 });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.description');
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      cards.forEach(card => obs.observe(card));
+    });

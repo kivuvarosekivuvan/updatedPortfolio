@@ -44,6 +44,19 @@ body {
     height: 450px;
   }
 }
+@layer utilities {
+  .max-w-lg { max-width: 32rem; }
+}
+    .description {
+      opacity: 0;
+      transform: translateX(2rem);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    /* when in viewport */
+    .description.in-view {
+      opacity: 1;
+      transform: translateX(0);
+    }
 
 /* Color utilities */
 .text-primary-dark   { color: #00497B; }
