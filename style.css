@@ -400,3 +400,75 @@ body {
             font-size: 1.5rem;
             margin-right: 0.5rem;
         }
+
+
+
+
+        
+        /* Container & Grid */
+.recommendation-section {
+  padding: 2rem 1rem;
+}
+.recommendation-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .recommendation-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Base */
+.recommendation-card {
+  position: relative;
+  /* background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); */
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Decorative Quote Mark */
+.recommendation-card::before {
+  content: '“';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 6rem;
+  line-height: 1;
+  color: rgba(0, 119, 182, 0.1);
+  font-family: serif;
+}
+
+/* Text Styling */
+.recommendation-card p {
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.recommendation-card .highlight {
+  font-weight: 700;
+  color: #0077B6;
+}
+
+/* Citation */
+.recommendation-card cite {
+  display: block;
+  margin-top: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #00497B;
+  text-align: right;
+}
+.recommendation-card cite small {
+  font-weight: 400;
+  color: #555;
+}
